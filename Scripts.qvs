@@ -1,0 +1,7 @@
+//**Configuration** Tab
+//The connection to the parent directory of the QlikMetaCollection directory, which houses all of the multi-tenant metadata.
+//This is the root location to read/write all QVDs to so that they can be loaded across tenants (S3, Azure Blob, or Google Cloud Storage).
+//The final path with resemble "QlikMetaCollection/CompiledTenants/Monitoring/<Monitoring App Name>/<Table>.qvd".
+//The location below should point to the parent directory of the "QlikMetaCollection" folder.
+
+SET vu_qlik_meta_collection_parent_dir = 'lib://:'; //Parent directory of the "QlikMetaCollection" folder (trailing slash optional)
